@@ -13,15 +13,22 @@ h2 {
   padding-bottom: 0.3em;
 }
 
+a {
+  color: maroon;
+  font-weight: bold;
+}
+
 .profile {
   display: flex;
   gap: 30px;
-  align-items: flex-start;
+  align-items: stretch;
   margin-bottom: 2em;
 }
 
 .photo {
-  width: 120px;
+  flex: 1;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
 }
 
