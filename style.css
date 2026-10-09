@@ -12,3 +12,19 @@ h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.3em;
 }
+
+.profile {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.about {
+  flex: 1;
+}
