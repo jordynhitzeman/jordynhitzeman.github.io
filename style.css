@@ -67,8 +67,9 @@ a {
 
   .photo {
     width: 100%;
-    height: 300px;
-    object-position: center top;
+    height: auto; /* CHANGED: was 300px; let the height follow the image */
+    max-height: 70vh; /* ADDED: stops very tall photos from taking over the screen */
+    object-position: center 20%; /* CHANGED: was center top; biases toward where faces usually sit */
     border-right: none;
     border-bottom: 2px solid #ccc;
   }
