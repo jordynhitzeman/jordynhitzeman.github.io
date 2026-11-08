@@ -61,16 +61,45 @@ a {
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
   .profile {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
   .photo {
     width: 100%;
-    height: auto; /* CHANGED: was 300px; let the height follow the image */
-    max-height: 70vh; /* ADDED: stops very tall photos from taking over the screen */
-    object-position: center 20%; /* CHANGED: was center top; biases toward where faces usually sit */
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
     border-right: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: none;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .topbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .topbar nav a {
+    margin-left: 0;
   }
 }
